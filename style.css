@@ -1,0 +1,83 @@
+/* Định dạng chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Tiêu đề chính */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Thanh điều hướng */
+nav {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+/* Khối nội dung chứa các cột */
+section {
+    margin-top: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Dùng font-size: 0 cho container để xóa khoảng trắng thừa do inline-block gây ra */
+    font-size: 0;
+}
+
+/* 3 Cột hiển thị theo dòng (inline-block) */
+.box {
+    display: inline-block;
+    width: 28%; /* Độ rộng phù hợp tránh tràn dòng */
+    margin: 1%;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 6px;
+    vertical-align: top; /* Căn lề trên cùng cho các hộp */
+    font-size: 16px; /* Khôi phục cỡ chữ chuẩn */
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.box h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    color: #7f8c8d;
+    font-size: 14px;
+    border-top: 1px solid #e0e0e0;
+}
